@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #6c6b6b;
+}
+
+
+.clearfix::after {
+	content: "";
+	display:block;
+	clear: both;
+}
+
+main{
+	width: 960px;
+	margin: 50px auto;
+
+}
+
+.image1{
+	background-image:url(img/flow01.png);
+	background-size:cover;
+	background-position:bottom;
+}
+.image2{
+	background-image:url(img/flow02.png);
+	background-size: cover;
+	background-position:bottom;
+
+}
+.image3{
+	background-image:url(img/flow03.png);
+	background-size:cover;
+	background-position:bottom;
+
+}
+
+
+.main-visual-content{
+	width:300px;
+	border: solid;
+	border-all:1px;
+	border-color:#eee;
+	float:left;
+	margin-right:30px;
+	position: relative;
+
+}
+.main-visual-content:nth-child(3){
+	margin-right: 0;
+}
+
+
+.step{
+	position:absolute;
+	top:0px;
+	left: 0px;
+	background-color: orange;
+	color:white;
+	padding:3px;
+}
+/*.step:nth-last-child(-n+2){
+	left:300px;
+}*/
+
+.image1, .image2, .image3{
+	width: 280px;
+	height:150px;
+	margin:10px 10px auto;
+}
+
+.explain{
+	width: 280px;
+	text-align:left;
+	margin:10px;
+}
+
+.title{
+	color:black;
+	margin:10px;
+}
+
+@media screen and (max-width:768px ){
+	main{
+		width:90%;
+		margin:50px auto;
+		float:none;
+	}
+
+
+	.main-visual-content:nth-child(1){
+		width: 90%;
+		float:none;
+		margin:0 auto 20px;
+
+	}
+	.main-visual-content:nth-child(2){
+		width: 90%;
+		float:none;
+		margin:0 auto 20px;
+	}
+
+	.main-visual-content:nth-child(3){
+		width: 90%;
+		float:none;
+		margin:0 auto ;
+	}
+
+
+
+
+	.image1 {
+		width:90%;
+		margin: 10px 10px auto;
+	}
+
+	.image2 {
+		width:90%;
+		margin:10px 10px auto;
+	}
+	.image3 {
+		width:90%;
+		margin: 10px 10px auto;
+	}
+
+
+	.explain{
+		width: 90%;
+	}
+	.title{
+		width:90%;
+	}
+	/*.step:nth-last-child(-n+2){
+		top:;*/
+
+
+	}
+
+}
+
